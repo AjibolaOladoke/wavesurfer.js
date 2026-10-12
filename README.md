@@ -260,3 +260,11 @@ Compiled and maintained from upstream [katspaugh/wavesurfer.js](https://github.c
 ---
 
 Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+
+## Sources
+
+Compiled and maintained from upstream [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
