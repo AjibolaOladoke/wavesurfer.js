@@ -6,7 +6,7 @@ We keep a working index for product and engineering, and wavesurfer.js is the en
 
 ## Images
 
-[![wavesurfer.js](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![wavesurfer.js](images/preview.png)](https://github.com/Swift-Tech-Co/wavesurfer.js)
 
 ## Getting started
 
@@ -21,7 +21,7 @@ import WaveSurfer from 'wavesurfer.js'
 
 Alternatively, insert a UMD script tag which exports the library as a global `WaveSurfer` variable:
 ```html
-<script src="https://www.swifttechco.com"></script>
+<script src="https://github.com/Swift-Tech-Co/wavesurfer.js"></script>
 ```
 
 Create a wavesurfer instance and pass various options:
@@ -41,9 +41,8 @@ import Regions from 'wavesurfer.js/dist/plugins/regions.esm.js'
 
 Or as a script tag that will export `WaveSurfer.Regions`:
 ```html
-<script src="https://www.swifttechco.com"></script>
+<script src="https://github.com/Swift-Tech-Co/wavesurfer.js"></script>
 ```
-
 
 See more examples.
 
@@ -147,28 +146,28 @@ However, please keep in mind that this forum is dedicated to wavesurfer-specific
 
 <details>
   <summary>I'm having CORS issues</summary>
-  Wavesurfer fetches audio from the URL you specify in order to decode it. Make sure this URL allows fetching data from your domain. In browser JavaScript, you can only fetch data eithetr from <b>the same domain</b> or another domain if and only if that domain enables <a href="https://www.swifttechco.com">CORS</a>. So if your audio file is on an external domain, make sure that domain sends the right Access-Control-Allow-Origin headers. There's nothing you can do about it from the requesting side (i.e. your JS code).
+  Wavesurfer fetches audio from the URL you specify in order to decode it. Make sure this URL allows fetching data from your domain. In browser JavaScript, you can only fetch data eithetr from <b>the same domain</b> or another domain if and only if that domain enables <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">CORS</a>. So if your audio file is on an external domain, make sure that domain sends the right Access-Control-Allow-Origin headers. There's nothing you can do about it from the requesting side (i.e. your JS code).
 </details>
 
 <details>
   <summary>Does wavesurfer support large files?</summary>
-  Since wavesurfer decodes audio entirely in the browser using Web Audio, large clips may fail to decode due to memory constraints. We recommend using pre-decoded peaks for large files (see <a href="https://www.swifttechco.com">this example</a>). You can use a tool like <a href="https://www.swifttechco.com">audiowaveform</a> to generate peaks.
+  Since wavesurfer decodes audio entirely in the browser using Web Audio, large clips may fail to decode due to memory constraints. We recommend using pre-decoded peaks for large files (see <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">this example</a>). You can use a tool like <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">audiowaveform</a> to generate peaks.
 </details>
 
 <details>
   <summary>What about streaming audio?</summary>
-  Streaming audio is supported only with <a href="https://www.swifttechco.com">pre-decoded peaks and duration</a>.
+  Streaming audio is supported only with <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">pre-decoded peaks and duration</a>.
 </details>
 
 <details>
   <summary>There is a mismatch between my audio and the waveform. How do I fix it?</summary>
   If you're using a VBR (variable bit rate) audio file, there might be a mismatch between the audio and the waveform. This can be fixed by converting your file to CBR (constant bit rate).
-  <p>Alternatively, you can use the <a href="https://www.swifttechco.com">Web Audio shim</a> which is more accurate.</p>
+  <p>Alternatively, you can use the <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">Web Audio shim</a> which is more accurate.</p>
 </details>
 
 <details>
   <summary>How do I connect wavesurfer.js to Web Audio effects?</summary>
-Generally, wavesurfer.js doesn't aim to be a wrapper for all things Web Audio. It's just a player with a waveform visualization. It does allow connecting itself to a Web Audio graph by exporting its audio element (see <a href="https://www.swifttechco.com">this example</a>) but nothign more than that. Please don't expect wavesurfer to be able to cut, add effects, or process your audio in any way.
+Generally, wavesurfer.js doesn't aim to be a wrapper for all things Web Audio. It's just a player with a waveform visualization. It does allow connecting itself to a Web Audio graph by exporting its audio element (see <a href="https://github.com/Swift-Tech-Co/wavesurfer.js">this example</a>) but nothign more than that. Please don't expect wavesurfer to be able to cut, add effects, or process your audio in any way.
 </details>
 
 <details>
@@ -193,7 +192,7 @@ yarn
 yarn start
 ```
 
-This command will open https://www.swifttechco.com in your browser with live reload, allowing you to see the changes as you develop.
+This command will open https://github.com/Swift-Tech-Co/wavesurfer.js in your browser with live reload, allowing you to see the changes as you develop.
 
 ## Tests
 
@@ -231,13 +230,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/wavesurfer.js
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
