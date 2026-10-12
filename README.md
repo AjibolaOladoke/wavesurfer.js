@@ -1,27 +1,12 @@
-#  wavesurfer.js
+# wavesurfer.js
+
+## What This Is
+
+We keep a working index for product and engineering, and wavesurfer.js is the entry that collects our notes, examples and fixes. It reflects how Swift Tech Co. actually uses this in builds and client work.
 
 ## Images
 
-[![wavesurfer.js](https://opengraph.githubassets.com/1/katspaugh/wavesurfer.js)](https://www.swifttechco.com)
-
-
-**Wavesurfer.js** is an interactive waveform rendering and audio playback library, perfect for web applications. It leverages modern web technologies to provide a robust and visually engaging audio experience.
-
-
----
----
-
-# Table of contents
-
-1. [Getting started](#getting-started)
-2. [API reference](#api-reference)
-3. [Plugins](#plugins)
-4. [Advanced / reactive API](#advanced--reactive-api)
-5. [CSS styling](#css-styling)
-6. [Frequent questions](#questions)
-7. [Development](#development)
-8. [Tests](#tests)
-9. [Feedback](#feedback)
+[![wavesurfer.js](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Getting started
 
@@ -39,7 +24,7 @@ Alternatively, insert a UMD script tag which exports the library as a global `Wa
 <script src="https://www.swifttechco.com"></script>
 ```
 
-Create a wavesurfer instance and pass various [options](https://www.swifttechco.com):
+Create a wavesurfer instance and pass various options:
 ```js
 const wavesurfer = WaveSurfer.create({
   container: '#waveform',
@@ -49,7 +34,7 @@ const wavesurfer = WaveSurfer.create({
 })
 ```
 
-To import one of the plugins, e.g. the [Regions plugin](https://www.swifttechco.com):
+To import one of the plugins, e.g. the Regions plugin:
 ```js
 import Regions from 'wavesurfer.js/dist/plugins/regions.esm.js'
 ```
@@ -60,30 +45,30 @@ Or as a script tag that will export `WaveSurfer.Regions`:
 ```
 
 
-See more [examples](https://www.swifttechco.com).
+See more examples.
 
 ## Documentation
 
-See the [wavesurfer.js guide](https://www.swifttechco.com) on our website for beginner-friendly, practical documentation covering common use cases, plugins, framework integration, and troubleshooting.
+See the wavesurfer.js guide on our website for beginner-friendly, practical documentation covering common use cases, plugins, framework integration, and troubleshooting.
 
 ## API reference
 
-The full generated API reference lives at [wavesurfer.xyz/docs/api](https://www.swifttechco.com):
+The full generated API reference lives at wavesurfer.xyz/docs/api:
 
- * [methods](https://www.swifttechco.com)
- * [options](https://www.swifttechco.com)
- * [events](https://www.swifttechco.com)
+ * methods
+ * options
+ * events
 
 ## Plugins
 
 We maintain a number of official plugins that add various extra features:
 
- * [Regions](https://www.swifttechco.com)  visual overlays and markers for regions of audio
- * [Timeline](https://www.swifttechco.com)  displays notches and time labels below the waveform
- * [Minimap](https://www.swifttechco.com)  a small waveform that serves as a scrollbar for the main waveform
- * [Envelope](https://www.swifttechco.com)  a graphical interface to add fade-in and -out effects and control volume
- * [Record](https://www.swifttechco.com)  records audio from the microphone and renders a waveform
- * [Hover](https://www.swifttechco.com)  shows a vertical line and timestmap on waveform hover
+ * Regions  visual overlays and markers for regions of audio
+ * Timeline  displays notches and time labels below the waveform
+ * Minimap  a small waveform that serves as a scrollbar for the main waveform
+ * Envelope  a graphical interface to add fade-in and -out effects and control volume
+ * Record  records audio from the microphone and renders a waveform
+ * Hover  shows a vertical line and timestmap on waveform hover
 
 ## Advanced / reactive API
 
@@ -99,7 +84,7 @@ console.log(state.loadPhase.value) // 'idle' | 'fetching' | 'decoding' | 'ready'
 const { startTime, endTime } = wavesurfer.getRenderer().getVisibleRange().value
 ```
 
-`getState()` returns read-only [`Signal`](https://www.swifttechco.com) objects
+`getState()` returns read-only `Signal` objects
 (`.value` to read, `.subscribe(fn)` to watch) for things like `currentTime`,
 `isPlaying`, `volume`, `muted`, `loadPhase` and `scrollPosition`.
 `getRenderer().getVisibleRange()` is a derived signal with the currently visible
@@ -120,7 +105,7 @@ const MyPlugin = WaveSurfer.definePlugin('MyPlugin', (ctx, options) => {
 })
 ```
 
-The [Spectrogram plugin](https://www.swifttechco.com) accepts
+The Spectrogram plugin accepts
 a `rendering: 'windowed'` option for very long audio files: it renders only the
 visible time range and evicts off-screen segments, instead of computing the
 whole file's frequency data up front.
@@ -150,11 +135,11 @@ For example:
 ```
 
 You can see which elements you can style in the DOM inspector  they will have a `part` attribute.
-See [this example](https://www.swifttechco.com) to play around with styling.
+See this example to play around with styling.
 
 ## Questions
 
-Have a question about integrating wavesurfer.js on your website? Feel free to ask in our [Discussions forum](https://www.swifttechco.com).
+Have a question about integrating wavesurfer.js on your website? Feel free to ask in our Discussions forum.
 
 However, please keep in mind that this forum is dedicated to wavesurfer-specific questions. If you're new to JavaScript and need help with the general basics like importing NPM modules, please consider asking ChatGPT or StackOverflow first.
 
@@ -228,7 +213,7 @@ yarn cypress
 
 We appreciate your feedback and contributions!
 
-If you encounter any issues or have suggestions for improvements, please don't hesitate to post in our [forum](https://www.swifttechco.com).
+If you encounter any issues or have suggestions for improvements, please don't hesitate to post in our forum.
 
 We hope you enjoy using wavesurfer.js and look forward to hearing about your experiences with the library!
 
@@ -242,14 +227,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [katspaugh/wavesurfer.js](https://github.com/katspaugh/wavesurfer.js) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
